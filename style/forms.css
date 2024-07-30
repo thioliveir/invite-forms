@@ -1,0 +1,18 @@
+@import url(fields.css/index.css);
+
+form {
+    gap: 3rem;
+    width: 35rem;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    margin-bottom: 1.5rem;
+}
+
+textarea {
+    resize: none;
+}

@@ -1,0 +1,36 @@
+#app {
+    
+    height: 100vh;
+    overflow: hidden;
+}
+
+aside {
+    background-image: url(../Assets/img/Background-logo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    & .aside-container {
+        max-width: 25rem;
+        margin-left: auto;
+        padding: 1.8rem;
+        gap: 1rem;
+
+        & .title p {
+            font: var(--tipo-text-md);
+            color: var(--text-heading);
+            margin-top: .25rem;
+        }
+    }
+}
+
+main {
+    background-color: var(--shape-body);
+    overflow: auto;
+    
+
+    & .main-container {
+        max-width: 51.25rem;
+        margin: 5rem auto;
+    }
+}

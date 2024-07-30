@@ -1,0 +1,133 @@
+
+.radio-wrapper {
+    border: 1px solid var(--input-stroke);
+    padding: .25rem;
+    background-color: var(--input-base);
+
+    & .radio-inner {
+        padding: .65rem;
+        gap: .5rem;
+        width: 130px;
+        position: relative;
+
+        & input,
+        & input:hover,
+        & input:focus {
+            all: unset;
+            position: absolute;
+            inset: 0;
+        }
+
+        & .img-presencial {
+            background-image: url(../../Assets/icons/building-2-default.svg);
+            background-repeat: no-repeat;
+            width: 1rem;
+        }
+
+        & .img-online {
+            background-image: url(../../Assets/icons/video-default.svg);
+            background-repeat: no-repeat;
+            width: 1rem;
+        }
+
+        & input[type="radio"] + label {
+            margin-bottom: 0;
+        }
+
+        &:has(:checked) {
+            background-color: var(--shape-hover);
+            border-radius: .5rem;
+
+            & .img-presencial {
+                background-image: url(../../Assets/icons/building-2-checked.svg);
+            }
+
+            & .img-online {
+                background-image: url(../../Assets/icons/video-checked.svg);
+            }
+
+            & label {
+                font-weight: 600;
+            }
+        }
+    }
+
+
+}
+
+.customization .input-wrapper {
+
+    & > div {
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+        border: none;
+        background-color: transparent;
+
+        & .color-circle {
+
+
+            & input {
+                padding: 0;
+                width: 1.75rem;
+                height: 1.75rem;
+                border-radius: 999px;
+                border: 3.5px solid var(--shape-button);
+                outline: 3.5px solid transparent;
+
+                &[value="brand-light"] {
+                    background-color: var(--brand-light);
+                }
+
+                &[value="navy"] {
+                    background-color: var(--accent-navy);
+                }
+
+                &[value="purple"] {
+                    background-color: var(--accent-purple);
+                }
+
+                &[value="fuschia"] {
+                    background-color: var(--accent-fuschia);
+                }
+
+                &[value="pink"] {
+                    background-color: var(--accent-pink);
+                }
+
+                &[value="danger"] {
+                    background-color: var(--feedback-danger);
+                }
+
+                &[value="orange"] {
+                    background-color: var(--accent-orange);
+                }
+                &[value="yellow"] {
+                    background-color: var(--accent-yellow);
+                }
+                &[value="lime"] {
+                    background-color: var(--accent-lime);
+                }
+                &[value="green"] {
+                    background-color: var(--accent-green);
+                }
+                &[value="cyan"] {
+                    background-color: var(--accent-cyan);
+                }
+
+                &:hover, &:focus, &:focus-within {
+                    border: 3.5px solid var(--shape-hover);
+                }
+            }
+
+
+
+            & input:checked {
+                outline: 3.5px solid var(--brand-light);
+            }
+        }
+    }
+
+    
+
+}
+
+

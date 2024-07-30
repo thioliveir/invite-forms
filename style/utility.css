@@ -1,0 +1,23 @@
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+    gap: .75rem;
+}
+
+.grid-columns {
+    grid-template-columns: 24.3% 74.7%;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+.bd-radious {
+    border-radius: .8rem;
+}
+
