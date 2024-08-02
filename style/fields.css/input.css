@@ -38,3 +38,50 @@ input::-webkit-datetime-edit{
         gap: 1rem;
     }
 }
+
+.contact div:nth-child(2) {
+    margin-bottom: 1rem;
+    height: 6.43rem;
+
+    & input:required:valid {
+        border: 1px solid var(--brand-light);
+
+        & + .error {
+            display: none;
+        }
+    }
+
+    & input:invalid {
+        border: 1px solid var(--feedback-danger);
+    }
+    & input + .error {
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+        font: var(--tipo-text);
+        color: var(--feedback-danger);
+        margin-top: .5rem;
+
+        & img {
+            width: 1rem;
+            aspect-ratio: 1/1;
+        }
+    }
+
+}
+
+.contact div:nth-child(3) {
+    gap: 1rem;
+
+    & div:first-child {
+        flex: 1;
+
+        & input[type="email"]:invalid {
+            border: 1px solid var(--feedback-danger);
+        }
+    }
+
+    & div:last-child {
+        flex: 1;
+    }
+}

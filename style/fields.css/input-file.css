@@ -1,0 +1,42 @@
+input[type="file"], input[type="file"]:focus,
+input[type="file"]:focus-within {
+    all: unset;
+}
+
+
+.input-file {
+    flex: 2;
+    
+    &>div {
+        align-items: center;
+
+        & input, & label {
+            margin-bottom: 0;
+        }
+
+        & label {
+            background: var(--shape-button);
+            padding: 10.5px 12px;
+            color: var(--text-heading);
+            font-weight: 600;
+            border-radius: .5rem;
+
+            &:hover {
+                background-color: var(--shape-hover);
+            }
+        }
+
+        & input, & input:focus {
+            font: var(--tipo-text-md);
+            color: var(--input-placeholder);
+        }
+    
+        & input[type=file]::-webkit-file-upload-button {
+            display: none;
+        }
+
+        
+    }
+
+
+}

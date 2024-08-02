@@ -55,7 +55,7 @@
 
 }
 
-.customization .input-wrapper {
+.color {
 
     & > div {
         grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
@@ -128,6 +128,58 @@
 
     
 
+}
+
+.event {
+    padding-block: 1.75rem;
+
+    & .radio-wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(8.37rem, 1fr));
+        gap: .5rem;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+
+        & .radio-event {
+            display: grid;
+            gap: .5rem;
+            justify-items: center;
+            border: 2px solid var(--shape-button);
+            background-color: var(--shape-button);
+            border-radius: .5rem;
+            padding: .2rem .2rem .5rem .2rem;
+            position: relative;
+
+            & img {
+                border-radius: .2rem;
+            }
+
+            & input {
+                height: 100%;
+                background: transparent;
+                position: absolute;
+
+                &:focus, &:focus-within {
+                    border: none;
+                }
+
+                &:checked {
+                    outline: 2px solid var(--brand-light);
+                }
+            }
+
+            & label {
+                margin-bottom: 0;
+                color: var(--text-heading);
+            }
+            &:hover, &:focus-within {
+                background-color: var(--shape-hover);
+                border-color: transparent;
+            }
+            
+
+        }
+    }
 }
 
 

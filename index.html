@@ -58,8 +58,8 @@
                         </legend>
 
                         <div class="input-wrapper">
-                            <label for="fullname">Nome</label>
-                            <input type="text" placeholder="Nome Completo" id="fullname" name="fullname">
+                            <label for="title-name">Nome</label>
+                            <input type="text" placeholder="Nome do evento" id="title-name" name="title-name">
                         </div>
 
                         <div class="grid">
@@ -111,7 +111,7 @@
                                 
                         </legend>
 
-                        <div class="input-wrapper">
+                        <div class="input-wrapper color">
                             <label>Cor Principal</label>
                             <div class="radio-wrapper grid">
                                 <div class="color-circle">
@@ -151,6 +151,96 @@
                             </div>
                         </div>
 
+                        <div class="input-wrapper event">
+                            <label>Tema do evento</label>
+                            <div class="radio-wrapper grid">
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 01.jpg" alt="aniversário">
+                                    <input type="radio" id="birthday" name="event" value="birthday">
+                                    <label for="birthday">Aniversário</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 02.jpg" alt="infantil">
+                                    <input type="radio" id="children" name="event" value="children">
+                                    <label for="children">infantil</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 03.jpg" alt="formatura">
+                                    <input type="radio" id="graduation" name="event" value="graduation">
+                                    <label for="graduation">Formatura</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 04.jpg" alt="casamento">
+                                    <input type="radio" id="weddings" name="event" value="weddings">
+                                    <label for="weddings">Casamento</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 05.jpg" alt="Chá de Bebê">
+                                    <input type="radio" id="baby" name="event" value="baby">
+                                    <label for="baby">Chá de Bebê</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 06.jpg" alt="Chá de Panela">
+                                    <input type="radio" id="pots" name="event" value="pots">
+                                    <label for="pots">Chá de Panela</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 07.jpg" alt="Carnaval">
+                                    <input type="radio" id="carnival" name="event" value="carnival">
+                                    <label for="carnival">Carnaval</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 08.jpg" alt="Páscoa">
+                                    <input type="radio" id="easter" name="event" value="easter">
+                                    <label for="easter">Páscoa</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 07.jpg" alt="São João">
+                                    <input type="radio" id="joao" name="event" value="joao">
+                                    <label for="joao">São João</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 08.jpg" alt="Halloween">
+                                    <input type="radio" id="halloween" name="event" value="halloween">
+                                    <label for="halloween">Halloween</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 11.jpg" alt="Natal">
+                                    <input type="radio" id="christmas" name="event" value="christmas">
+                                    <label for="christmas">Natal</label>
+                                </div>
+                                <div class="radio-event">
+                                    <img src="Assets/img/Image 12.jpg" alt="Outro">
+                                    <input type="radio" id="outer" name="event" value="outer">
+                                    <label for="easter">Outro</label>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="input-wrapper flex">
+                            <div class="input-toggle">
+                                <label for="style">Estilo</label>
+                                <div class="toggle flex">
+                                    <input type="checkbox">
+                                    <label for="" class=""></label>
+                                </div>
+                            </div>
+
+                            <div class="input-file">
+                                <label>Foto de capa</label>
+                                <div class="flex">
+                                    <label for="cover-img" class="flex">
+                                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.14645 1.64645C8.34171 1.45118 8.65829 1.45118 8.85355 1.64645L12.1869 4.97978C12.3821 5.17504 12.3821 5.49162 12.1869 5.68689C11.9916 5.88215 11.675 5.88215 11.4798 5.68689L9 3.20711V10C9 10.2761 8.77614 10.5 8.5 10.5C8.22386 10.5 8 10.2761 8 10V3.20711L5.52022 5.68689C5.32496 5.88215 5.00838 5.88215 4.81311 5.68689C4.61785 5.49162 4.61785 5.17504 4.81311 4.97978L8.14645 1.64645ZM2.5 9.5C2.77614 9.5 3 9.72386 3 10V12.6667C3 12.8877 3.0878 13.0996 3.24408 13.2559C3.40036 13.4122 3.61232 13.5 3.83333 13.5H13.1667C13.3877 13.5 13.5996 13.4122 13.7559 13.2559C13.9122 13.0996 14 12.8877 14 12.6667V10C14 9.72386 14.2239 9.5 14.5 9.5C14.7761 9.5 15 9.72386 15 10V12.6667C15 13.1529 14.8068 13.6192 14.463 13.963C14.1192 14.3068 13.6529 14.5 13.1667 14.5H3.83333C3.3471 14.5 2.88079 14.3068 2.53697 13.963C2.19315 13.6192 2 13.1529 2 12.6667V10C2 9.72386 2.22386 9.5 2.5 9.5Z" fill="#59B2FF"/>
+                                        </svg>
+                                        <span>Selecionar</span>
+                                    </label>
+                                    <input type="file" name="cover-img" id="cover-img" accept="image/*">
+                                </div>
+                                    
+                            </div>
+                        </div>
                     </fieldset>
 
                     <fildset class="contact">
@@ -162,9 +252,30 @@
 
                             <h3>Dados para contato</h3>
                         </legend>
-                    </fildset>
 
+                        <div class="input-wrapper">
+                            <label for="fullname">Nome</label>
+                            <input type="text" name="fullname" id="fullname" placeholder="Nome Completo" required>
+                            <div class="error">
+                                <img src="Assets/icons/error.svg" alt="icone de alerta">
+                                <span>Campo obrigatório</span>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper flex">
+                            <div class="input-inner">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email"  placeholder="exemplo@exemplo.com.br">
+                            </div>
+                            <div class="input-inner">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" name="phone" id="phone" placeholder="(99) 99999-9999">
+                            </div>
+                        </div>
+                    </fildset>
                 </form>
+
+   
             </div>
             
         </main>
