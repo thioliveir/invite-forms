@@ -5,7 +5,7 @@ input[type="file"]:focus-within {
 
 
 .input-file {
-    flex: 2;
+    width: 23rem;
     
     &>div {
         align-items: center;

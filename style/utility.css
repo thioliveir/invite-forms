@@ -8,7 +8,7 @@
 }
 
 .grid-columns {
-    grid-template-columns: 24.3% 74.7%;
+    grid-template-columns: 30.3% 68.7%;
     gap: 1rem;
     padding: 1rem;
 }

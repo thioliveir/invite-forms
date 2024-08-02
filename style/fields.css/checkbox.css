@@ -1,5 +1,5 @@
 .input-toggle {
-    flex: 1;
+    width: 11rem;
 }
 
 .toggle {
@@ -56,5 +56,31 @@
             content: "Escuro";
             color: var(--text-heading);
         }
+    }
+}
+
+.terms-wrapper {
+    padding-block: 2.5rem 3rem;
+
+    & .terms-inner{
+        position: relative;
+        
+        & input[type="checkbox"] {
+            all: unset;
+            position: absolute;
+            inset: 0;
+
+        }
+        
+        & .checkbox-img {
+            background-image: url(../../Assets/icons/checkbox-default.svg);
+            flex: 0 0 1.25rem;
+            height: 1.25rem;
+        }
+        &:has(:checked) .checkbox-img {
+            background-image: url(../../Assets/icons/checkbox-checked.svg);
+        }
+
+    
     }
 }
